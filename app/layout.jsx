@@ -13,6 +13,20 @@ export const metadata = {
   title: "Tabby | Pay Later",
   description:
     "Split your purchases into 4 interest-free payments at your favourite stores.",
+  openGraph: {
+    title: "Tabby | Pay Later",
+    description:
+      "Split your purchases into 4 interest-free payments at your favourite stores.",
+    url: "https://tabby-ead.vercel.app",
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddeima5fc/image/upload/v1706812362/tabby_image_ipjjgs.png",
+        width: 1200,
+        height: 627,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
