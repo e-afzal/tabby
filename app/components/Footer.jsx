@@ -53,7 +53,6 @@ export default function Footer() {
           maxWidth: "1280px",
           minWidth: "320px",
           width: "100%",
-          border: "1px solid red",
         }}
       >
         <div className='logo_box'>
