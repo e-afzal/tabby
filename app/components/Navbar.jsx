@@ -7,9 +7,9 @@ import flag from "@/public/images/navbar/flags/uae.png";
 
 export default function Navbar() {
   return (
-    <header className='h-20 flex justify-center items-center'>
+    <header className='h-20 flex justify-center items-center  z-50 fixed bg-white w-full top-0'>
       <nav
-        className='max-w-7xl mx-auto bg-white flex justify-between z-50 fixed'
+        className='max-w-7xl mx-auto  flex justify-between'
         style={{ minWidth: "1280px" }}
       >
         {/* NAVIGATION LEFT */}
