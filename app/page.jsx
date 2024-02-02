@@ -3,6 +3,29 @@ import qr from "@/public/images/home/showcase/qr.jpg";
 import Image from "next/image";
 
 export default function Home() {
+  const normalGridItems = [
+    {
+      iconUrl: "payments.svg",
+      iconAlt: "Shopping bag icon",
+      title: "4 interest-free payments",
+      description:
+        "Shop now and pay later by choosing Tabby at checkout to split your purchases into 4 interest-free payments.",
+    },
+    {
+      iconUrl: "interest.svg",
+      iconAlt: "Percentage icon",
+      title: "No interest or fees",
+      description:
+        "Built on trust. Not interest. You’ll never pay extra when you pay on time. No interest. No fees. No catch.",
+    },
+    {
+      iconUrl: "deals.svg",
+      iconAlt: "Gift icon",
+      title: "The best deals",
+      description:
+        "You’ll never miss another deal or coupon with daily updates on your favourite brands, including Tabby exclusives.",
+    },
+  ];
   return (
     <main className='mt-20'>
       {/* SECTION: SHOWCASE */}
@@ -87,11 +110,38 @@ export default function Home() {
         {/* CTA BUTTON - Appears for <1024px devices */}
         <a
           href='#'
-          className='text-center bg-titleDarkGrey text-white font-radialb px-8 py-3 rounded-full mt-8 block w-max'
+          className='text-center bg-titleDarkGrey text-white font-radialb px-8 py-3 rounded-full mt-8 block md:w-max'
         >
           Get the app
         </a>
       </div>
+
+      {/* SECTION: NEW NORMAL */}
+      <section id='normal'>
+        <div className='normal_container font-radialb max-w-screen-xl mx-auto py-16 lg:py-20 px-8'>
+          <h2 className='block lg:w-96 text-5xl'>Shopping's new normal.</h2>
+          <div className='normal_grid grid grid-cols-1 lg:grid-cols-3 gap-20 pt-20'>
+            {normalGridItems.map((each, index) => (
+              <div key={index} className='space-y-3'>
+                <Image
+                  src={`/images/home/features/${each.iconUrl}`}
+                  alt={each.iconAlt}
+                  className='block mb-5'
+                  width={44}
+                  height={44}
+                />
+                <h4 className='text-2xl leading-tight'>{each.title}</h4>
+                <p
+                  className='text-base font-radialr'
+                  style={{ color: "#54545c" }}
+                >
+                  {each.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
