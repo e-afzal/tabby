@@ -13,7 +13,7 @@ export default function NavbarMobile() {
   return (
     <>
       <header className='h-20 flex xl:hidden justify-between items-center z-50 fixed bg-white w-full top-0'>
-        <nav className='flex justify-between px-5 w-full'>
+        <nav className='flex justify-between px-5 md:px-12 w-full'>
           {/* LOGO CONTAINER */}
           <div className='logo_container' onClick={() => setMenuOpen(true)}>
             <Image src={logo} alt='Tabby logo' />
