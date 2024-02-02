@@ -16,7 +16,7 @@ export default function Overlay({ menuOpen, setMenuOpen }) {
   return (
     <div
       style={{ display: menuOpen ? "block" : "none" }}
-      className='nav_overlay absolute z-50 bg-white top-0 left-0 right-0 bottom-0 px-5'
+      className='nav_overlay fixed z-50 bg-white top-0 left-0 right-0 bottom-0 px-5'
     >
       {/* LANGUAGE CONTAINER */}
       <div className='locale_container flex h-20 items-center'>
