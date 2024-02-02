@@ -1,6 +1,8 @@
-// import qr from "@/public/images/home/showcase/qr_code.png";
-import qr from "@/public/images/home/showcase/qr.jpg";
 import Image from "next/image";
+
+// ASSET IMPORTS
+import qr from "@/public/images/home/showcase/qr.jpg";
+import cardImage from "@/public/images/home/pay/showcase.webp";
 
 export default function Home() {
   const normalGridItems = [
@@ -118,8 +120,10 @@ export default function Home() {
 
       {/* SECTION: NEW NORMAL */}
       <section id='normal'>
-        <div className='normal_container font-radialb max-w-screen-xl mx-auto py-16 lg:py-20 px-8'>
-          <h2 className='block lg:w-96 text-5xl'>Shopping's new normal.</h2>
+        <div className='normal_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8'>
+          <h2 className='block lg:w-96 text-5xl font-radialb'>
+            Shopping's new normal.
+          </h2>
           <div className='normal_grid grid grid-cols-1 lg:grid-cols-3 gap-20 pt-20'>
             {normalGridItems.map((each, index) => (
               <div key={index} className='space-y-3'>
@@ -130,7 +134,9 @@ export default function Home() {
                   width={44}
                   height={44}
                 />
-                <h4 className='text-2xl leading-tight'>{each.title}</h4>
+                <h4 className='text-2xl leading-tight font-radialb'>
+                  {each.title}
+                </h4>
                 <p
                   className='text-base font-radialr'
                   style={{ color: "#54545c" }}
@@ -139,6 +145,35 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: TABBY CARD */}
+      <section id='card'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col-reverse lg:flex-row gap-10 justify-between items-center'>
+          <div className='card_content max-w-xl'>
+            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
+              Take Pay in 4 anywhere with Tabby Card
+            </h2>
+            <p className='text-xl mt-6 mb-10'>
+              Tabby Card lets you Pay in 4 for everyday shopping, anywhere VISA
+              is accepted. No interest or fees.
+            </p>
+            {/* CTA BUTTON - Appears for <1024px devices */}
+            <a
+              href='#'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+            >
+              Learn more
+            </a>
+          </div>
+          <div className='card_image'>
+            <Image
+              src={cardImage}
+              alt='Tabby Mobile App Mockup'
+              className='min-w-80 w-full max-w-xl'
+            />
           </div>
         </div>
       </section>
