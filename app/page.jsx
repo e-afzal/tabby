@@ -3,6 +3,8 @@ import Image from "next/image";
 // ASSET IMPORTS
 import qr from "@/public/images/home/showcase/qr.jpg";
 import cardImage from "@/public/images/home/pay/showcase.webp";
+import levelImage from "@/public/images/home/level/showcase.webp";
+import businessImage from "@/public/images/home/business/showcase.webp";
 
 export default function Home() {
   const normalGridItems = [
@@ -173,6 +175,35 @@ export default function Home() {
               src={cardImage}
               alt='Tabby Mobile App Mockup'
               className='min-w-80 w-full max-w-xl'
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: LEVEL */}
+      <section id='level'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col-reverse lg:flex-row gap-10 justify-between items-center'>
+          <div className='card_content max-w-xl'>
+            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
+              Take shopping to the next level.
+            </h2>
+            <p className='text-lg mt-6 mb-10' style={{ color: "#54545c" }}>
+              With the Tabby app, you can shop now, pay later and earn cash -
+              with no interest, fees or hidden costs of any kind.
+            </p>
+            {/* CTA BUTTON - Appears for <1024px devices */}
+            <a
+              href='#'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+            >
+              Get the app
+            </a>
+          </div>
+          <div className='card_image'>
+            <Image
+              src={levelImage}
+              alt='Tabby Mobile App Mockup'
+              className='min-w-80 w-full max-w-xl lg:min-w-[525px]'
             />
           </div>
         </div>
