@@ -208,6 +208,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* SECTION: BUSINESS */}
+      <section id='business'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col lg:flex-row gap-10 justify-between items-center'>
+          <div className='card_image'>
+            <Image
+              src={businessImage}
+              alt='Tabby Mobile App Mockup'
+              className='min-w-80 w-full max-w-xl lg:min-w-[525px]'
+            />
+          </div>
+          <div className='card_content max-w-xl'>
+            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
+              Looking to sell with Tabby?
+            </h2>
+            <p className='text-lg mt-6 mb-10' style={{ color: "#54545c" }}>
+              Tabby's shopping experience removes price as a barrier. Turning
+              browsers into buyers, increasing average order value, and
+              expanding your customer base.
+            </p>
+            {/* CTA BUTTON - Appears for <1024px devices */}
+            <a
+              href='#'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+            >
+              Tabby for Business
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
