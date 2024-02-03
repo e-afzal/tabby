@@ -6,6 +6,14 @@ import cardImage from "@/public/images/home/pay/showcase.webp";
 import levelImage from "@/public/images/home/level/showcase.webp";
 import businessImage from "@/public/images/home/business/showcase.webp";
 
+// COMPONENTS
+import DealsCarousel from "@/app/components/DealsCarousel";
+import CategoryCarousel from "@/app/components/CategoryCarousel";
+import CategoriesCarousel from "@/app/components/CategoriesCarousel";
+
+// DATA
+import data from "@/app/data/home.js";
+
 export default function Home() {
   const normalGridItems = [
     {
@@ -180,8 +188,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION: TOP DEALS */}
+      <section id='deals' className='pt-16'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Top Deals</h4>
+          <DealsCarousel />
+        </div>
+      </section>
+
+      {/* SECTION: FASHION */}
+      <section id='fashion' className='mt-24'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Fashion</h4>
+          <CategoryCarousel data={data.fashion} />
+        </div>
+      </section>
+
+      {/* SECTION: BEAUTY */}
+      <section id='beauty' className='mt-24'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Beauty</h4>
+          <CategoryCarousel data={data.beauty} />
+        </div>
+      </section>
+
+      {/* SECTION: HOME */}
+      <section id='home' className='mt-24'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Home</h4>
+          <CategoryCarousel data={data.home} />
+        </div>
+      </section>
+
+      {/* SECTION: KIDS & TOYS */}
+      <section id='kids' className='mt-24'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Kids & Toys</h4>
+          <CategoryCarousel data={data.kids} />
+        </div>
+      </section>
+
+      {/* SECTION: SHOP BY CATEGORY */}
+      <section id='categories' className='mt-24'>
+        <div className='mx-auto max-w-[1215px]'>
+          <h4 className='text-[28px] font-radialb mb-7'>Shop by Category</h4>
+          <CategoriesCarousel data={data.categories} />
+          <a
+            href='#'
+            className='block text-center mx-auto text-titleDarkGrey font-radialb tracking-wide min-w-[167px] py-[10px] my-20 rounded-full md:w-max bg-[#3eedbf] hover:bg-ctaBlue hover:text-white'
+          >
+            Shop now
+          </a>
+        </div>
+      </section>
+
       {/* SECTION: LEVEL */}
-      <section id='level'>
+      <section id='level' className='mt-16'>
         <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col-reverse lg:flex-row gap-10 justify-between items-center'>
           <div className='card_content max-w-xl'>
             <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
