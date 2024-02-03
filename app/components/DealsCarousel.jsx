@@ -89,76 +89,80 @@ function DealsCarousel() {
   ];
 
   return (
-    <Carousel>
-      <CarouselContent>
-        {demoData.map((each, index) => (
-          <CarouselItem
-            key={index}
-            className='basis-1/4.5 min-w-[320px] min-h-[320px]'
-          >
-            <a href='#'>
-              {/* CAROUSEL CARD */}
-              <div
-                className='card_image w-full min-w-[320px] min-h-[245px] relative rounded-md'
-                style={{
-                  background: `url(${each.imageMain}) no-repeat center center/cover`,
-                }}
-              >
-                <div className='image_content absolute left-0 bottom-0 z-10 px-4 pb-4'>
-                  <p className='text-[19px] text-white font-radialb mb-1'>
-                    {each.titleP1}
-                  </p>
-                  <p className='text-white font-radialb text-5xl'>
-                    {each.titleP2.split(" ").map((each, index) => (
-                      <span
-                        key={index}
-                        className={
-                          index === 1
-                            ? " ml-2 text-[19px] text-white font-radialb mb-1"
-                            : undefined
-                        }
-                      >
-                        {each}
-                      </span>
-                    ))}
-                  </p>
-                </div>
-                {/* IMAGE OVERLAY */}
+    <>
+      <Carousel>
+        <CarouselContent>
+          {demoData.map((each, index) => (
+            <CarouselItem
+              key={index}
+              className='basis-1/4.5 min-w-[320px] min-h-[320px]'
+            >
+              <a href='#'>
+                {/* CAROUSEL CARD */}
                 <div
-                  className='overlay absolute top-0 right-0 left-0 bottom-0 rounded-md'
+                  className='card_image w-full min-w-[320px] min-h-[245px] relative rounded-md'
                   style={{
-                    background: `linear-gradient( 42.03deg, rgba(0, 0, 0, 0.71) 11.38%, rgba(255, 255, 255, 0) 88.46%, rgba(255, 255, 255, 0) 88.46% )`,
+                    background: `url(${each.imageMain}) no-repeat center center/cover`,
                   }}
-                ></div>
-              </div>
-
-              <div className='brand_subsection py-4 flex justify-between items-center'>
-                <div className='brand_details flex gap-2 items-center'>
-                  <Image
-                    src={each.imageBrand}
-                    width={38}
-                    height={38}
-                    alt={`${each.brand} logo`}
-                    className='border-[#e6e5e9] border-solid border-[1px] rounded-full'
-                  />
-                  <span className='text-sm text text-[#777781]'>
-                    {each.brand}
-                  </span>
-                </div>
-                <a
-                  href='#'
-                  className='text-sm text-center py-2 font-radialb text-titleDarkGrey min-w-[117px] border-solid border-[1px] border-titleDarkGrey rounded'
                 >
-                  Shop now
-                </a>
-              </div>
-            </a>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+                  <div className='image_content absolute left-0 bottom-0 z-10 px-4 pb-4'>
+                    <p className='text-[19px] text-white font-radialb mb-1'>
+                      {each.titleP1}
+                    </p>
+                    <p className='text-white font-radialb text-5xl'>
+                      {each.titleP2.split(" ").map((each, index) => (
+                        <span
+                          key={index}
+                          className={
+                            index === 1
+                              ? " ml-2 text-[19px] text-white font-radialb mb-1"
+                              : undefined
+                          }
+                        >
+                          {each}
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                  {/* IMAGE OVERLAY */}
+                  <div
+                    className='overlay absolute top-0 right-0 left-0 bottom-0 rounded-md'
+                    style={{
+                      background: `linear-gradient( 42.03deg, rgba(0, 0, 0, 0.71) 11.38%, rgba(255, 255, 255, 0) 88.46%, rgba(255, 255, 255, 0) 88.46% )`,
+                    }}
+                  ></div>
+                </div>
+
+                <div className='brand_subsection py-4 flex justify-between items-center'>
+                  <div className='brand_details flex gap-2 items-center'>
+                    <Image
+                      src={each.imageBrand}
+                      width={38}
+                      height={38}
+                      alt={`${each.brand} logo`}
+                      className='border-[#e6e5e9] border-solid border-[1px] rounded-full'
+                    />
+                    <span className='text-sm text text-[#777781]'>
+                      {each.brand}
+                    </span>
+                  </div>
+                  <a
+                    href='#'
+                    className='text-sm text-center py-2 font-radialb text-titleDarkGrey min-w-[117px] border-solid border-[1px] border-titleDarkGrey rounded'
+                  >
+                    Shop now
+                  </a>
+                </div>
+              </a>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className='hidden min-[1350px]:block'>
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
+      </Carousel>
+    </>
   );
 }
 

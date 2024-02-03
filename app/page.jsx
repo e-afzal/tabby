@@ -189,7 +189,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: TOP DEALS */}
-      <section id='deals' className='pt-16'>
+      <section id='deals' className='pt-16 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Top Deals</h4>
           <DealsCarousel />
@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: FASHION */}
-      <section id='fashion' className='mt-24'>
+      <section id='fashion' className='mt-24 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Fashion</h4>
           <CategoryCarousel data={data.fashion} />
@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: BEAUTY */}
-      <section id='beauty' className='mt-24'>
+      <section id='beauty' className='mt-24 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Beauty</h4>
           <CategoryCarousel data={data.beauty} />
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: HOME */}
-      <section id='home' className='mt-24'>
+      <section id='home' className='mt-24 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Home</h4>
           <CategoryCarousel data={data.home} />
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: KIDS & TOYS */}
-      <section id='kids' className='mt-24'>
+      <section id='kids' className='mt-24 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Kids & Toys</h4>
           <CategoryCarousel data={data.kids} />
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* SECTION: SHOP BY CATEGORY */}
-      <section id='categories' className='mt-24'>
+      <section id='categories' className='mt-24 px-5'>
         <div className='mx-auto max-w-[1215px]'>
           <h4 className='text-[28px] font-radialb mb-7'>Shop by Category</h4>
           <CategoriesCarousel data={data.categories} />

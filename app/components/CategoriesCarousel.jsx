@@ -13,32 +13,36 @@ import {
 
 function CategoriesCarousel({ data }) {
   return (
-    <Carousel>
-      <CarouselContent>
-        {data.map((each, index) => (
-          <CarouselItem
-            key={index}
-            className='basis-1/5.5 min-w-[250px] max-w-[320px] min-h-[188px]'
-          >
-            <a href={`${each.url}`} key={index}>
-              {/* CAROUSEL CARD */}
-              <div
-                className='card_image min-w-[250px] min-h-[188px] rounded-md'
-                style={{
-                  background: `url(${each.imageMain}) no-repeat center center/cover`,
-                }}
-              ></div>
+    <>
+      <Carousel>
+        <CarouselContent>
+          {data.map((each, index) => (
+            <CarouselItem
+              key={index}
+              className='basis-1/5.5 min-w-[250px] max-w-[320px] min-h-[188px]'
+            >
+              <a href={`${each.url}`} key={index}>
+                {/* CAROUSEL CARD */}
+                <div
+                  className='card_image min-w-[250px] min-h-[188px] rounded-md'
+                  style={{
+                    background: `url(${each.imageMain}) no-repeat center center/cover`,
+                  }}
+                ></div>
 
-              <div className='title_container flex items-center justify-between pt-4'>
-                <p className='text-lg font-radialb'>{each.title}</p>
-              </div>
-            </a>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+                <div className='title_container flex items-center justify-between pt-4'>
+                  <p className='text-lg font-radialb'>{each.title}</p>
+                </div>
+              </a>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className='hidden min-[1350px]:block'>
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
+      </Carousel>
+    </>
   );
 }
 

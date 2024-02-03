@@ -18,12 +18,12 @@ function CategoryCarousel({ data }) {
         {data.map((each, index) => (
           <CarouselItem
             key={index}
-            className='basis-1/4.5 min-w-[320px] min-h-[320px]'
+            className='basis-1/4.5 min-w-[217px] md:min-w-[320px] md:min-h-[320px]'
           >
             <a href='#' key={index}>
               {/* CAROUSEL CARD */}
               <div
-                className='card_image w-full min-w-[320px] min-h-[245px] relative rounded-md'
+                className='card_image w-full min-w-[217px] min-h-[180px] md:min-w-[320px] md:min-h-[245px] relative rounded-md'
                 style={{
                   background: `url(${each.imageMain}) no-repeat center center/cover`,
                 }}
@@ -73,8 +73,10 @@ function CategoryCarousel({ data }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <div className='hidden min-[1350px]:block'>
+        <CarouselPrevious />
+        <CarouselNext />
+      </div>
     </Carousel>
   );
 }
