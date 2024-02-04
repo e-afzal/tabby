@@ -47,7 +47,7 @@ export default function CountrySelectorMobile() {
           //   style={{ border: "1px solid red" }}
         >
           <Image src={flag} alt='Country flag' className='max-h-9 w-auto' />
-          <span className='font-radialb'>UAE</span>
+          <span className='font-radialb text-lg'>UAE</span>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           {/* <DropdownMenuLabel>My Account</DropdownMenuLabel> */}
