@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 // ASSET IMPORTS
+import chevron from "@/public/images/home/shop/chevron-right.svg";
 import qr from "@/public/images/home/showcase/qr.jpg";
 import cardImage from "@/public/images/home/pay/showcase.webp";
 import levelImage from "@/public/images/home/level/showcase.webp";
@@ -40,6 +41,29 @@ export default function Home() {
   ];
   return (
     <main className='mt-20'>
+      {/* TABBY SHOP STRIP */}
+      <section id='shop' className='w-full'>
+        <div className='shop_container bg-titleDarkGrey px-5 md:px-0 overflow-hidden'>
+          <a
+            href='#'
+            className='flex gap-4 items-center justify-center min-h-[40px] md:min-h-[56px] max-h-[40px] md:max-h-[56px] max-w-fit mx-auto'
+          >
+            <p className='text-white font-radialb text-sm md:text-base truncate w-full'>
+              Introducing Tabby Shop. Discover and track hundred of thousands of
+              items in one place.{" "}
+            </p>
+            <span>
+              <Image
+                src={chevron}
+                alt='Tabby shop link'
+                height={24}
+                width={24}
+              />
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* SECTION: SHOWCASE */}
       <section
         id='showcase'
