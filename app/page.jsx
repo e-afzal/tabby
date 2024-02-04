@@ -55,9 +55,9 @@ export default function Home() {
             <span>
               <Image
                 src={chevron}
-                alt='Tabby shop link'
-                height={24}
+                alt='Link to Tabby shop'
                 width={24}
+                height={24}
               />
             </span>
           </a>
@@ -146,9 +146,19 @@ export default function Home() {
         {/* CTA BUTTON - Appears for <1024px devices */}
         <a
           href='#'
-          className='text-center bg-titleDarkGrey text-white font-radialb px-8 py-3 rounded-full mt-8 block md:w-max'
+          className='text-center bg-titleDarkGrey text-white font-radialb px-8 py-3 rounded-full mt-8 md:w-max flex justify-center items-center gap-2'
         >
-          Get the app
+          Get the app{" "}
+          <span>
+            {" "}
+            <Image
+              src={chevron}
+              alt='Link to Tabby App Download'
+              width={20}
+              height={20}
+              className='mt-[2px]'
+            />
+          </span>
         </a>
       </div>
 
@@ -197,9 +207,19 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex items-center justify-center gap-2'
             >
-              Learn more
+              Learn more{" "}
+              <span>
+                {" "}
+                <Image
+                  src={chevron}
+                  alt='Link to Tabby App Download'
+                  width={20}
+                  height={20}
+                  className='mt-[1px]'
+                />
+              </span>
             </a>
           </div>
           <div className='card_image'>
@@ -280,9 +300,24 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex justify-center items-center gap-2'
             >
-              Get the app
+              Get the app{" "}
+              <span>
+                <svg
+                  className='w-5 h-5 stroke-white hover:stroke-ctaBlue'
+                  stroke='currentColor'
+                  fill='none'
+                  stroke-width='2'
+                  viewBox='0 0 24 24'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <line x1='5' y1='12' x2='19' y2='12'></line>
+                  <polyline points='12 5 19 12 12 19'></polyline>
+                </svg>
+              </span>
             </a>
           </div>
           <div className='card_image'>
@@ -317,9 +352,19 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 block md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue'
+              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex justify-center items-center gap-2'
             >
               Tabby for Business
+              <span>
+                {" "}
+                <Image
+                  src={chevron}
+                  alt='Link to Tabby App Download'
+                  width={20}
+                  height={20}
+                  className='mt-[1px]'
+                />
+              </span>
             </a>
           </div>
         </div>
