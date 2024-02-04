@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// COMPONENTS
+import LoginCTA from "./LoginCTA";
+
 // ASSET IMPORTS
 import logo from "@/public/images/navbar/logo.svg";
 import mobile from "@/public/images/navbar/mobile.svg";
@@ -40,7 +43,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <button>Log in or sign up</button>
+              <LoginCTA />
             </li>
           </ul>
           {/* LOCALE */}

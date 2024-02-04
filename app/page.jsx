@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 // ASSET IMPORTS
-import chevron from "@/public/images/home/shop/chevron-right.svg";
 import qr from "@/public/images/home/showcase/qr.jpg";
 import cardImage from "@/public/images/home/pay/showcase.webp";
 import levelImage from "@/public/images/home/level/showcase.webp";

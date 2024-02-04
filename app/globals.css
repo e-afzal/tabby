@@ -103,6 +103,34 @@ body {
   margin-inline: auto;
 }
 
+/* Credentials divider class used in 'LoginCTA' comp */
+.credentials_divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.credentials_divider::after {
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px #54545c;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.credentials_divider span {
+  padding-inline: 15px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  z-index: 10;
+  position: relative;
+  color: #54545c;
+}
+
 /* MEDIA QUERY - HOME */
 @media screen and (min-width: 550px) {
   section#showcase {
