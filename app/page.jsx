@@ -10,6 +10,7 @@ import businessImage from "@/public/images/home/business/showcase.webp";
 import DealsCarousel from "@/app/components/DealsCarousel";
 import CategoryCarousel from "@/app/components/CategoryCarousel";
 import CategoriesCarousel from "@/app/components/CategoriesCarousel";
+import CountrySelector from "@/app/components/CountrySelector";
 
 // DATA
 import data from "@/app/data/home.js";
@@ -41,7 +42,7 @@ export default function Home() {
   return (
     <main className='mt-20'>
       {/* TABBY SHOP STRIP */}
-      <section id='shop' className='w-full'>
+      <section id='shop'>
         <div className='shop_container bg-titleDarkGrey px-5 md:px-0 overflow-hidden'>
           <a
             href='#'

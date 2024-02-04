@@ -4,6 +4,10 @@ import Image from "next/image";
 import cancelIcon from "@/public/images/navbar/cancel.svg";
 import flag from "@/public/images/navbar/flags/uae.png";
 
+// COMPONENTS
+import CountrySelector from "@/app/components/CountrySelector";
+import CountrySelectorMobile from "@/app/components/CountrySelectorMobile";
+
 export default function Overlay({ menuOpen, setMenuOpen }) {
   const menuItems = [
     { name: "Shop", url: "#" },
@@ -49,7 +53,7 @@ export default function Overlay({ menuOpen, setMenuOpen }) {
       </ul>
 
       {/* LOCALE SELECTOR */}
-      <div
+      {/* <div
         className='flex items-center mt-4 py-4 px-3'
         style={{
           border: "1px solid #e6e5e9",
@@ -62,15 +66,8 @@ export default function Overlay({ menuOpen, setMenuOpen }) {
             United Arab Emirates
           </span>
         </div>
-        {/* <div className='language_container '>
-              <span
-                className='font-pinga text-ctaPurple pl-4'
-                style={{ fontSize: "14px", borderLeft: "1px solid #e6e5e9" }}
-              >
-                العربية
-              </span>
-            </div> */}
-      </div>
+      </div> */}
+      <CountrySelectorMobile />
     </div>
   );
 }

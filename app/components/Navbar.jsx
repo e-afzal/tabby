@@ -6,7 +6,8 @@ import LoginCTA from "./LoginCTA";
 // ASSET IMPORTS
 import logo from "@/public/images/navbar/logo.svg";
 import mobile from "@/public/images/navbar/mobile.svg";
-import flag from "@/public/images/navbar/flags/uae.png";
+import CountrySelector from "./CountrySelector";
+// import flag from "@/public/images/navbar/flags/uae.png";
 
 export default function Navbar() {
   return (
@@ -46,28 +47,8 @@ export default function Navbar() {
               <LoginCTA />
             </li>
           </ul>
-          {/* LOCALE */}
-          <div
-            className='locale_container flex items-center'
-            style={{
-              border: "1px solid #e6e5e9",
-              borderRadius: "100px",
-              padding: "8px 12px 8px 8px",
-            }}
-          >
-            <div className='country_selector flex items-center space-x-4 pr-4'>
-              <Image src={flag} alt='Country flag' className='max-h-9 w-auto' />
-              <span>UAE</span>
-            </div>
-            <div className='language_container '>
-              <span
-                className='font-pinga text-ctaPurple pl-4'
-                style={{ fontSize: "14px", borderLeft: "1px solid #e6e5e9" }}
-              >
-                العربية
-              </span>
-            </div>
-          </div>
+          {/* COUNTRY SELECTOR */}
+          <CountrySelector />
         </div>
       </nav>
     </header>
