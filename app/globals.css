@@ -107,8 +107,9 @@ body {
 @media screen and (min-width: 550px) {
   section#showcase {
     min-height: 480px;
-  }
-  section#showcase .showcase_container {
-    min-height: 480px;
+    .showcase_container {
+      min-height: 480px;
+      border: 1px solid red;
+    }
   }
 }

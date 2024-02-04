@@ -146,18 +146,25 @@ export default function Home() {
         {/* CTA BUTTON - Appears for <1024px devices */}
         <a
           href='#'
-          className='text-center bg-titleDarkGrey text-white font-radialb px-8 py-3 rounded-full mt-8 md:w-max flex justify-center items-center gap-2'
+          className='text-center font-radialb text-white hover:text-ctaBlue bg-ctaBlue hover:bg-ctaGreen px-8 py-3 rounded-full mt-8 md:w-max flex justify-center items-center gap-2'
         >
           Get the app{" "}
           <span>
             {" "}
-            <Image
-              src={chevron}
-              alt='Link to Tabby App Download'
-              width={20}
-              height={20}
-              className='mt-[2px]'
-            />
+            <svg
+              stroke='currentColor'
+              fill='none'
+              stroke-width='2'
+              viewBox='0 0 24 24'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              height='1em'
+              width='1em'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <line x1='5' y1='12' x2='19' y2='12'></line>
+              <polyline points='12 5 19 12 12 19'></polyline>
+            </svg>
           </span>
         </a>
       </div>
@@ -207,18 +214,25 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex items-center justify-center gap-2'
+              className='text-center font-radialb tracking-wide text-white hover:text-ctaBlue bg-ctaBlue hover:bg-ctaGreen px-9 py-3 rounded-full mt-8 md:w-max flex items-center justify-center gap-2'
             >
               Learn more{" "}
               <span>
                 {" "}
-                <Image
-                  src={chevron}
-                  alt='Link to Tabby App Download'
-                  width={20}
-                  height={20}
-                  className='mt-[1px]'
-                />
+                <svg
+                  stroke='currentColor'
+                  fill='none'
+                  stroke-width='2'
+                  viewBox='0 0 24 24'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  height='1em'
+                  width='1em'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <line x1='5' y1='12' x2='19' y2='12'></line>
+                  <polyline points='12 5 19 12 12 19'></polyline>
+                </svg>
               </span>
             </a>
           </div>
@@ -300,18 +314,20 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex justify-center items-center gap-2'
+              className='text-center text-white hover:text-ctaBlue bg-ctaBlue hover:bg-ctaGreen font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max flex justify-center items-center gap-2'
             >
               Get the app{" "}
               <span>
+                {" "}
                 <svg
-                  className='w-5 h-5 stroke-white hover:stroke-ctaBlue'
                   stroke='currentColor'
                   fill='none'
                   stroke-width='2'
                   viewBox='0 0 24 24'
                   stroke-linecap='round'
                   stroke-linejoin='round'
+                  height='1em'
+                  width='1em'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <line x1='5' y1='12' x2='19' y2='12'></line>
@@ -352,18 +368,25 @@ export default function Home() {
             {/* CTA BUTTON - Appears for <1024px devices */}
             <a
               href='#'
-              className='text-center text-white font-radialb tracking-wide px-9 py-3 rounded-full mt-8 md:w-max bg-ctaBlue hover:bg-ctaGreen hover:text-ctaBlue flex justify-center items-center gap-2'
+              className='font-radialb tracking-wide text-center text-white hover:text-ctaBlue bg-ctaBlue hover:bg-ctaGreen rounded-full mt-8 px-9 py-3 md:w-max flex justify-center items-center gap-2'
             >
               Tabby for Business
               <span>
                 {" "}
-                <Image
-                  src={chevron}
-                  alt='Link to Tabby App Download'
-                  width={20}
-                  height={20}
-                  className='mt-[1px]'
-                />
+                <svg
+                  stroke='currentColor'
+                  fill='none'
+                  stroke-width='2'
+                  viewBox='0 0 24 24'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  height='1em'
+                  width='1em'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <line x1='5' y1='12' x2='19' y2='12'></line>
+                  <polyline points='12 5 19 12 12 19'></polyline>
+                </svg>
               </span>
             </a>
           </div>
