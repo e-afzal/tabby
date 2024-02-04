@@ -53,12 +53,21 @@ export default function Home() {
               items in one place.{" "}
             </p>
             <span>
-              <Image
-                src={chevron}
-                alt='Link to Tabby shop'
-                width={24}
-                height={24}
-              />
+              <svg
+                className='w-6 h-6'
+                stroke='#fff'
+                fill='none'
+                strokeWidth='2'
+                viewBox='0 0 24 24'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                height='1em'
+                width='1em'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <line x1='5' y1='12' x2='19' y2='12'></line>
+                <polyline points='12 5 19 12 12 19'></polyline>
+              </svg>
             </span>
           </a>
         </div>
@@ -154,10 +163,10 @@ export default function Home() {
             <svg
               stroke='currentColor'
               fill='none'
-              stroke-width='2'
+              strokeWidth='2'
               viewBox='0 0 24 24'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeLinecap='round'
+              strokeLinejoin='round'
               height='1em'
               width='1em'
               xmlns='http://www.w3.org/2000/svg'
@@ -222,10 +231,10 @@ export default function Home() {
                 <svg
                   stroke='currentColor'
                   fill='none'
-                  stroke-width='2'
+                  strokeWidth='2'
                   viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   height='1em'
                   width='1em'
                   xmlns='http://www.w3.org/2000/svg'
@@ -322,10 +331,10 @@ export default function Home() {
                 <svg
                   stroke='currentColor'
                   fill='none'
-                  stroke-width='2'
+                  strokeWidth='2'
                   viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   height='1em'
                   width='1em'
                   xmlns='http://www.w3.org/2000/svg'
@@ -376,10 +385,10 @@ export default function Home() {
                 <svg
                   stroke='currentColor'
                   fill='none'
-                  stroke-width='2'
+                  strokeWidth='2'
                   viewBox='0 0 24 24'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   height='1em'
                   width='1em'
                   xmlns='http://www.w3.org/2000/svg'
