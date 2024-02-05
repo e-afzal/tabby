@@ -9,16 +9,19 @@
 @font-face {
   font-family: "Radial Regular";
   src: url("../public/fonts/Radial-Regular.woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Radial Bold";
   src: url("../public/fonts/Radial-Bold.woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Ping Arabic";
   src: url("../public/fonts/PingArabic-Bold.woff2");
+  font-display: swap;
 }
 
 @layer base {
