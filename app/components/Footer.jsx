@@ -97,10 +97,18 @@ export default function Footer() {
       >
         <h4 className='text-lg capitalize text-white font-radialb'>Share</h4>
         <div className='mt-5 flex flex-row items-center space-x-3'>
-          <Image src={facebook} alt='Facebook icon' />
-          <Image src={instagram} alt='Instagram icon' />
-          <Image src={linkedin} alt='Linkedin icon' />
-          <Image src={x} alt='X icon' />
+          <a href='https://www.facebook.com/paywithtabby' target='_blank'>
+            <Image src={facebook} alt='Facebook icon' />
+          </a>
+          <a href='https://www.instagram.com/tabbypay' target='_blank'>
+            <Image src={instagram} alt='Instagram icon' />
+          </a>
+          <a href='https://www.linkedin.com/company/tabbypay' target='_blank'>
+            <Image src={linkedin} alt='Linkedin icon' />
+          </a>
+          <a href='https://twitter.com/paywithtabby?lang=en' target='_blank'>
+            <Image src={x} alt='X icon' />
+          </a>
         </div>
       </div>
     </footer>

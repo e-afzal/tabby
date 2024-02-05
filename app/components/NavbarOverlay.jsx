@@ -2,10 +2,8 @@ import Image from "next/image";
 
 // ASSET IMPORTS
 import cancelIcon from "@/public/images/navbar/cancel.svg";
-import flag from "@/public/images/navbar/flags/uae.png";
 
 // COMPONENTS
-import CountrySelector from "@/app/components/CountrySelector";
 import CountrySelectorMobile from "@/app/components/CountrySelectorMobile";
 
 export default function Overlay({ menuOpen, setMenuOpen }) {
@@ -52,21 +50,7 @@ export default function Overlay({ menuOpen, setMenuOpen }) {
         ))}
       </ul>
 
-      {/* LOCALE SELECTOR */}
-      {/* <div
-        className='flex items-center mt-4 py-4 px-3'
-        style={{
-          border: "1px solid #e6e5e9",
-          borderRadius: "100px",
-        }}
-      >
-        <div className='country_selector flex items-center space-x-4 pr-4'>
-          <Image src={flag} alt='Country flag' className='max-h-9 w-auto' />
-          <span className='font-radialb text-titleDarkGrey text-lg'>
-            United Arab Emirates
-          </span>
-        </div>
-      </div> */}
+      {/* COUNTRY SELECTOR */}
       <CountrySelectorMobile />
     </div>
   );
