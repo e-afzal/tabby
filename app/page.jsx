@@ -5,7 +5,7 @@ import qr from "@/public/images/home/showcase/qr.jpg";
 import cardImage from "@/public/images/home/pay/showcase.webp";
 import levelImage from "@/public/images/home/level/showcase.webp";
 import businessImage from "@/public/images/home/business/showcase.webp";
-import showcase from "@/public/images/home/showcase/showcase.jpg";
+// import showcase from "@/public/images/home/showcase/showcase.webp";
 
 // COMPONENTS
 import DealsCarousel from "@/app/components/DealsCarousel";
@@ -78,7 +78,7 @@ export default function Home() {
         id='showcase'
         className='min-w-full min-h-64'
         style={{
-          background: `url("/images/home/showcase/showcase.jpg") no-repeat 50% 0%/cover`,
+          background: `url("/images/home/showcase/showcase.webp") no-repeat 50% 0%/cover`,
           backgroundColor: "#292929",
         }}
       >

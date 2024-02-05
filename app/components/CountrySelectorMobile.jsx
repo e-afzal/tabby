@@ -46,7 +46,12 @@ export default function CountrySelectorMobile() {
           className='country_selector flex items-center space-x-4 pr-4 outline-none w-full'
           //   style={{ border: "1px solid red" }}
         >
-          <Image src={flag} alt='Country flag' className='max-h-9 w-auto' />
+          <Image
+            src={flag}
+            alt='Country flag'
+            className='max-h-9 w-auto'
+            priority={true}
+          />
           <span className='font-radialb text-lg'>UAE</span>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
