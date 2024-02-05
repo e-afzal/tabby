@@ -5,12 +5,12 @@ import qr from "@/public/images/home/showcase/qr.jpg";
 import cardImage from "@/public/images/home/pay/showcase.webp";
 import levelImage from "@/public/images/home/level/showcase.webp";
 import businessImage from "@/public/images/home/business/showcase.webp";
+import showcase from "@/public/images/home/showcase/showcase.jpg";
 
 // COMPONENTS
 import DealsCarousel from "@/app/components/DealsCarousel";
 import CategoryCarousel from "@/app/components/CategoryCarousel";
 import CategoriesCarousel from "@/app/components/CategoriesCarousel";
-import CountrySelector from "@/app/components/CountrySelector";
 
 // DATA
 import data from "@/app/data/home.js";
@@ -82,6 +82,11 @@ export default function Home() {
           backgroundColor: "#292929",
         }}
       >
+        {/* <Image
+          src={showcase}
+          alt='Showcase image'
+          className='absolute top-0 right-0 left-0 bottom-0 object-cover'
+        /> */}
         <div className='showcase_container mx-auto px-8 max-w-screen-xl'>
           {/* SHOWCASE CONTENT -DESKTOP*/}
           <div className='py-20 hidden lg:block'>
@@ -110,6 +115,7 @@ export default function Home() {
                   width={74}
                   height={74}
                   className='rounded-xl'
+                  priority={true}
                 />
               </div>
               <p className='text-sm text-center text-titleDarkGrey line-clamp-3 max-w-20 font-radialb mr-2'>

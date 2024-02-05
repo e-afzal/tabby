@@ -16,7 +16,7 @@ export default function NavbarMobile() {
         <nav className='flex justify-between px-5 md:px-12 w-full'>
           {/* LOGO CONTAINER */}
           <div className='logo_container' onClick={() => setMenuOpen(true)}>
-            <Image src={logo} alt='Tabby logo' />
+            <Image src={logo} alt='Tabby logo' priority={true} />
           </div>
           {/* HAMBURGER CONTAINER */}
           <div className='hamburger_container flex items-center'>
@@ -29,6 +29,7 @@ export default function NavbarMobile() {
             <div className='menu_icon_container px-2 hover:cursor-pointer'>
               <Image
                 src={hamburger}
+                priority={true}
                 alt='Hamburger Menu Icon'
                 onClick={() => setMenuOpen(true)}
               />

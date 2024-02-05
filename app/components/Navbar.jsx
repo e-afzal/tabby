@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* NAVIGATION LEFT */}
         <div className='nav_left flex'>
           <div className='logo_container'>
-            <Image src={logo} alt='Tabby logo' />
+            <Image src={logo} alt='Tabby logo' priority={true} />
           </div>
           <ul className='nav_links ml-5 flex items-center space-x-4 gap-2'>
             <li>
@@ -39,7 +39,7 @@ export default function Navbar() {
           <ul className='links flex items-center space-x-12'>
             <li>
               <a href='#' className='flex items-center gap-3'>
-                <Image src={mobile} alt='Mobile icon' />
+                <Image src={mobile} alt='Mobile icon' priority={true} />
                 <span>Get the app</span>
               </a>
             </li>
