@@ -4,6 +4,29 @@ import Image from "next/image";
 import qr from "@/public/images/home/showcase/qr.jpg";
 
 export default function GetApp() {
+  const feelGridItems = [
+    {
+      iconUrl: "dollar.svg",
+      iconAlt: "Dollar icon",
+      title: "Stay in control of your spending.",
+      description:
+        "Manage your spend, track your payments and stay on top of your money.",
+    },
+    {
+      iconUrl: "tag.svg",
+      iconAlt: "Shopping tag icon",
+      title: "Access the best deals and codes.",
+      description:
+        "You'll never miss another deal with exclusive deals and discount codes from your favourite stores.",
+    },
+    {
+      iconUrl: "grid.svg",
+      iconAlt: "Grid icon",
+      title: "Discover more stores to pay in 4.",
+      description:
+        "Find your favourites or discover spotlight brands that let you pay in 4 online or in-store.",
+    },
+  ];
   return (
     <main className='mt-20'>
       {/* SECTION: SHOWCASE */}
@@ -116,6 +139,37 @@ export default function GetApp() {
           </span>
         </a>
       </div>
+
+      {/* SECTION: FEEL GOOD SHOPPING */}
+      <section id='feel'>
+        <div className='normal_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8'>
+          <h2 className='block lg:w-96 text-5xl font-radialb'>
+            Feel good shopping.
+          </h2>
+          <div className='normal_grid grid grid-cols-1 lg:grid-cols-3 gap-20 pt-20'>
+            {feelGridItems.map((each, index) => (
+              <div key={index} className='space-y-3'>
+                <Image
+                  src={`/images/get_app/feel/${each.iconUrl}`}
+                  alt={each.iconAlt}
+                  className='block mb-5'
+                  width={44}
+                  height={44}
+                />
+                <h4 className='text-2xl leading-tight font-radialb'>
+                  {each.title}
+                </h4>
+                <p
+                  className='text-base font-radialr'
+                  style={{ color: "#54545c" }}
+                >
+                  {each.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
