@@ -24,7 +24,7 @@ export default function Footer() {
       title: "shoppers",
       links: [
         { title: "Shops", url: "#" },
-        { title: "Get the app", url: "#" },
+        { title: "Get the app", url: "/get-app" },
         { title: "How it works", url: "#" },
         { title: "Cashback", url: "#" },
         { title: "Login", url: "#" },

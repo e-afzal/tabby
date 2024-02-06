@@ -12,7 +12,7 @@ export default function Overlay({ menuOpen, setMenuOpen }) {
     { name: "Ways to pay", url: "#" },
     { name: "For business", url: "#" },
     { name: "Log in or sign up", url: "#" },
-    { name: "Get the app", url: "#" },
+    { name: "Get the app", url: "/get-app" },
   ];
 
   return (

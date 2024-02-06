@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* LINKS */}
           <ul className='links flex items-center space-x-12'>
             <li>
-              <a href='#' className='flex items-center gap-3'>
+              <a href='/get-app' className='flex items-center gap-3'>
                 <Image src={mobile} alt='Mobile icon' priority={true} />
                 <span>Get the app</span>
               </a>
