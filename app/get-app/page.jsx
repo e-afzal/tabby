@@ -83,7 +83,7 @@ export default function GetApp() {
       </section>
       {/* SECTION: SHOWCASE CONTENT - MOBILE */}
       <div className='py-8 md:py-16 px-5 md:px-12 lg:hidden'>
-        <h1 className='w-full font-radialb text-[44px] lg:text-6xl whitespace-pre-wrap lg:max-w-md'>
+        <h1 className='w-full font-radialb text-[44px] lg:text-6xl whitespace-pre-wrap lg:max-w-md leading-[1.1]'>
           The all-in-one shopping app.
         </h1>
         <p
