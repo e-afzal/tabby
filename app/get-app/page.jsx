@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 // ASSET IMPORTS
+import levelImage from "@/public/images/home/level/showcase.webp";
+
+// ASSET IMPORTS
 import qr from "@/public/images/home/showcase/qr.jpg";
 
 export default function GetApp() {
@@ -167,6 +170,44 @@ export default function GetApp() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: LEVEL */}
+      <section id='level' className='mt-16'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col lg:flex-row gap-10 justify-between items-center'>
+          <div className='card_image'>
+            <Image
+              src={levelImage}
+              width={693}
+              height={504}
+              alt='Tabby Mobile App Mockup'
+              className='min-w-80 max-w-[693px] w-full lg:min-w-[693px] rounded-sm'
+            />
+          </div>
+          <div className='card_content max-w-xl'>
+            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
+              All your shopping. One app.
+            </h2>
+            <p
+              className='text-lg mt-6 mb-10 leading-[1.35]'
+              style={{ color: "#54545c" }}
+            >
+              Find exclusive deals, track payments and level up your shopping.
+            </p>
+            <a
+              href='#'
+              className='block max-w-[322px] px-8 py-2.5 text-base text-center font-radialb rounded-full border-2 border-black hover:border-[#3eedbf]'
+            >
+              Download iOS
+            </a>
+            <a
+              href='#'
+              className='mt-3 block max-w-[322px] px-8 py-2.5 text-base text-center font-radialb rounded-full border-2 border-black hover:border-[#3eedbf]'
+            >
+              Download Android
+            </a>
           </div>
         </div>
       </section>
