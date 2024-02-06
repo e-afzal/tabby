@@ -1,10 +1,14 @@
 import Image from "next/image";
 
 // ASSET IMPORTS
+import qr from "@/public/images/home/showcase/qr.jpg";
 import levelImage from "@/public/images/home/level/showcase.webp";
 
-// ASSET IMPORTS
-import qr from "@/public/images/home/showcase/qr.jpg";
+// COMPONENTS
+import CategoryCarousel from "../components/CategoryCarousel";
+
+// DATA
+import data from "@/app/data/home.js";
 
 export default function GetApp() {
   const feelGridItems = [
@@ -50,6 +54,73 @@ export default function GetApp() {
         "Pay only 25% upfront and we'll remind you about the rest. Completely free, no interest.",
     },
   ];
+  const featuredBrands = [
+    {
+      brand: "SHEIN",
+      imageMain: "/images/get_app/favorites/shein.webp",
+      imageBrand: "/images/get_app/favorites/shein_logo.webp",
+      split: true,
+      deals: true,
+      inStore: false,
+    },
+    {
+      brand: "Golden Scent",
+      imageMain: "/images/get_app/favorites/goldenscent.webp",
+      imageBrand: "/images/get_app/favorites/goldenscent_logo.webp",
+      split: true,
+      deals: false,
+      inStore: false,
+    },
+    {
+      brand: "Level Shoes",
+      imageMain: "/images/get_app/favorites/levelshoes.webp",
+      imageBrand: "/images/get_app/favorites/levelshoes_logo.webp",
+      split: true,
+      deals: true,
+      inStore: true,
+    },
+    {
+      brand: "Joi Gifts",
+      imageMain: "/images/get_app/favorites/joigifts.webp",
+      imageBrand: "/images/get_app/favorites/joigifts_logo.webp",
+      split: true,
+      deals: true,
+      inStore: false,
+    },
+    {
+      brand: "Abdul Samad Al Qureshi",
+      imageMain: "/images/get_app/favorites/asaq.webp",
+      imageBrand: "/images/get_app/favorites/asaq_logo.webp",
+      split: true,
+      deals: false,
+      inStore: true,
+    },
+    {
+      brand: "IKEA",
+      imageMain: "/images/get_app/favorites/ikea.webp",
+      imageBrand: "/images/get_app/favorites/ikea_logo.webp",
+      split: true,
+      deals: false,
+      inStore: true,
+    },
+    {
+      brand: "Home Centre",
+      imageMain: "/images/get_app/favorites/homecentre.webp",
+      imageBrand: "/images/get_app/favorites/homecentre_logo.webp",
+      split: true,
+      deals: false,
+      inStore: true,
+    },
+    {
+      brand: "The Watch House",
+      imageMain: "/images/get_app/favorites/thewatchhouse.webp",
+      imageBrand: "/images/get_app/favorites/thewatchhouse_logo.webp",
+      split: true,
+      deals: false,
+      inStore: true,
+    },
+  ];
+
   return (
     <main className='mt-20'>
       {/* SECTION: SHOWCASE */}
@@ -195,8 +266,8 @@ export default function GetApp() {
       </section>
 
       {/* SECTION: WORKING */}
-      <section id='working' className='my-20'>
-        <div className='working_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-12'>
+      <section id='working' className='py-16 lg:py-20'>
+        <div className='working_container max-w-screen-xl mx-auto px-5 md:px-12'>
           <h2 className='font-radialb text-[44px] leading-[1.1] block w-full lg:w-4/12'>
             How the app <span className='block'>works.</span>
           </h2>
@@ -218,20 +289,33 @@ export default function GetApp() {
         </div>
       </section>
 
+      {/* SECTION: FAVORITES */}
+      <section id='favorites' className='my-16 lg:my-20'>
+        <div className='mx-auto max-w-[1280px] px-5 md:px-12'>
+          <h2 className='font-radialb text-5xl lg:text-6xl leading-tight'>
+            Shop your favourites.
+          </h2>
+          <h4 className='mt-14 text-[28px] font-radialb mb-7'>
+            Featured stores
+          </h4>
+          <CategoryCarousel data={featuredBrands} />
+        </div>
+      </section>
+
       {/* SECTION: CTA */}
       <section id='cta' className='mt-16'>
-        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col lg:flex-row gap-10 justify-between items-center'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-9 flex flex-col lg:flex-row gap-10 justify-between lg:items-center'>
           <div className='card_image'>
             <Image
               src={levelImage}
               width={693}
               height={504}
               alt='Tabby Mobile App Mockup'
-              className='min-w-80 max-w-[693px] w-full lg:min-w-[693px] rounded-sm'
+              className='min-w-80 max-w-full lg:max-w-[693px] w-full xl:min-w-[693px] rounded-sm'
             />
           </div>
           <div className='card_content max-w-xl'>
-            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-tight'>
+            <h2 className='font-radialb text-4xl md:text-5xl leading-tight md:leading-[1.1]'>
               All your shopping. One app.
             </h2>
             <p
