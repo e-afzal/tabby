@@ -30,6 +30,26 @@ export default function GetApp() {
         "Find your favourites or discover spotlight brands that let you pay in 4 online or in-store.",
     },
   ];
+  const workGridItems = [
+    {
+      image: "brands.webp",
+      title: "Find your favourite brands.",
+      description:
+        "Shop your favourites or discover new brands that let you get the most out of shopping. You'll find noon, SHEIN, Namshi, IKEA and thousands more.",
+    },
+    {
+      image: "checkout.webp",
+      title: "Select Tabby at checkout.",
+      description:
+        "Add what you want to your cart and choose Tabby at checkout. Sign up, link any card and get approved instantly.",
+    },
+    {
+      image: "split.webp",
+      title: "Split in 4 monthly payments.",
+      description:
+        "Pay only 25% upfront and we'll remind you about the rest. Completely free, no interest.",
+    },
+  ];
   return (
     <main className='mt-20'>
       {/* SECTION: SHOWCASE */}
@@ -174,8 +194,32 @@ export default function GetApp() {
         </div>
       </section>
 
-      {/* SECTION: LEVEL */}
-      <section id='level' className='mt-16'>
+      {/* SECTION: WORKING */}
+      <section id='working' className='my-20'>
+        <div className='working_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-12'>
+          <h2 className='font-radialb text-[44px] leading-[1.1] block w-full lg:w-4/12'>
+            How the app <span className='block'>works.</span>
+          </h2>
+
+          <div className='working_grid mt-10 lg:mt-[84px] grid grid-cols-1 lg:grid-cols-3 gap-10'>
+            {workGridItems.map((each, index) => (
+              <div className='work_card' key={index}>
+                <Image
+                  src={`/images/get_app/works/${each.image}`}
+                  width={379}
+                  height={408}
+                  alt={each.title}
+                />
+                <h4 className='text-2xl font-radialb mt-5'>{each.title}</h4>
+                <p className='mt-[12px] text-[#54545c]'>{each.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: CTA */}
+      <section id='cta' className='mt-16'>
         <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col lg:flex-row gap-10 justify-between items-center'>
           <div className='card_image'>
             <Image
