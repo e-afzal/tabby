@@ -7,8 +7,26 @@ import levelImage from "@/public/images/home/level/showcase.webp";
 // COMPONENTS
 import CategoryCarousel from "../components/CategoryCarousel";
 
-// DATA
-import data from "@/app/data/home.js";
+// METADATA
+export const metadata = {
+  title: "The Tabby app – shopping that gives back | Tabby",
+  description:
+    "With the Tabby app, you can shop now and pay later – with no interest, fees or hidden costs of any kind. Get the app on iOS or Android.",
+  openGraph: {
+    title: "The Tabby app – shopping that gives back | Tabby",
+    description:
+      "With the Tabby app, you can shop now and pay later – with no interest, fees or hidden costs of any kind. Get the app on iOS or Android.",
+    url: "https://tabby-ead.vercel.app/get-app",
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddeima5fc/image/upload/v1706812362/tabby_image_ipjjgs.png",
+        width: 1200,
+        height: 627,
+      },
+    ],
+  },
+};
 
 export default function GetApp() {
   const feelGridItems = [

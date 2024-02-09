@@ -14,7 +14,7 @@ export default function Footer() {
       links: [
         { title: "Contact", url: "#" },
         { title: "Careers", url: "#" },
-        { title: "Press", url: "#" },
+        { title: "Press", url: "/press" },
         { title: "Shariah Compliance", url: "#" },
         { title: "Terms & Conditions", url: "#" },
         { title: "Privacy Policy", url: "#" },
