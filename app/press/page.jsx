@@ -85,7 +85,7 @@ export default async function Press() {
             {items.map((item, index) => (
               <div key={index} className='grid_card'>
                 <a
-                  href={`/press/${item.fields.articleSlug}`}
+                  href={`/press/${item.fields.articleSlug}?id=${item.sys.id}`}
                   className='card_image_container block overflow-hidden max-w-full h-[192px] rounded'
                 >
                   <Image

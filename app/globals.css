@@ -143,3 +143,14 @@ body {
     min-height: 480px;
   }
 }
+
+/* SINGLE NEWS ARTICLE STYLES */
+.news_article p {
+  margin-bottom: 20px;
+}
+.news_article h3 {
+  margin-top: 45px;
+  margin-bottom: 7px;
+  font-size: 28px;
+  font-family: "Radial Bold", sans-serif;
+}
