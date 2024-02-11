@@ -34,7 +34,7 @@ export default function Sharia() {
           <h1 className='text-titleDarkGrey font-radialb text-center text-[44px] lg:text-6xl leading-[48px] lg:leading-[64px] tracking-[-1.2px] whitespace-pre-wrap'>
             We're committed to Shariah Law
           </h1>
-          <p className='text-center mt-6 md:mt-4'>
+          <p className='text-center lg:text-lg mt-6 md:mt-4'>
             Compliance with Islamic Shariah principles is at the forefront of
             Tabby's values and are upheld in accordance with Shariah Laws.
           </p>
@@ -168,12 +168,15 @@ export default function Sharia() {
 
       {/* SECTION: LEVEL */}
       <section id='level' className='mt-16'>
-        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-8 flex flex-col-reverse lg:flex-row gap-10 justify-between items-center'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-12 flex flex-col-reverse lg:flex-row gap-10 justify-between items-center'>
           <div className='card_content max-w-xl'>
             <h2 className='font-radialb text-[28px] md:text-[44px] leading-[1.3] md:leading-[48px]'>
               About Shariyah Review Bureau
             </h2>
-            <p className='text-lg mt-6 mb-10' style={{ color: "#54545c" }}>
+            <p
+              className='text-base md:text-lg mt-6 mb-10'
+              style={{ color: "#54545c" }}
+            >
               Shariyah Review Bureau (SRB) is a Middle East-based firm with an
               international scholarly platform of +37 scholars covering 4 major
               school of jurisprudences and spreading over 16 countries including
