@@ -16,7 +16,7 @@ export default function Footer() {
         { title: "Careers", url: "#" },
         { title: "Press", url: "/press" },
         { title: "Shariah Compliance", url: "/sharia" },
-        { title: "Terms & Conditions", url: "#" },
+        { title: "Terms & Conditions", url: "/terms" },
         { title: "Privacy Policy", url: "#" },
       ],
     },
