@@ -17,7 +17,7 @@ export default function Footer() {
         { title: "Press", url: "/press" },
         { title: "Shariah Compliance", url: "/sharia" },
         { title: "Terms & Conditions", url: "/terms" },
-        { title: "Privacy Policy", url: "#" },
+        { title: "Privacy Policy", url: "/privacy" },
       ],
     },
     {
