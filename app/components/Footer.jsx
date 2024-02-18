@@ -26,7 +26,7 @@ export default function Footer() {
         { title: "Shops", url: "#" },
         { title: "Get the app", url: "/get-app" },
         { title: "How it works", url: "#" },
-        { title: "Cashback", url: "#" },
+        { title: "Cashback", url: "/cashback" },
         { title: "Login", url: "#" },
         { title: "Shopper FAQs", url: "#" },
       ],
