@@ -13,7 +13,7 @@ export default function Footer() {
       title: "about",
       links: [
         { title: "Contact", url: "#" },
-        { title: "Careers", url: "#" },
+        { title: "Careers", url: "/careers" },
         { title: "Press", url: "/press" },
         { title: "Shariah Compliance", url: "/sharia" },
         { title: "Terms & Conditions", url: "/terms" },
