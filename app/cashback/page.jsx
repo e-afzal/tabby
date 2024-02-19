@@ -255,7 +255,7 @@ export default function Cashback() {
 
       {/* SECTION: FAQ */}
       <section id='faq'>
-        <div className='faq_container px-5'>
+        <div className='faq_container px-5 md:px-12'>
           <h2 className='text-[28px] font-radialb lg:text-[44px] lg:text-center'>
             Frequently asked questions
           </h2>
@@ -285,7 +285,7 @@ export default function Cashback() {
 
       {/* SECTION: CTA */}
       <section id='cta' className='mt-16'>
-        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-9 flex flex-col lg:flex-row gap-10 justify-between lg:items-center'>
+        <div className='card_container max-w-screen-xl mx-auto py-16 lg:py-20 px-5 md:px-12 flex flex-col lg:flex-row gap-10 justify-between lg:items-start'>
           <div className='card_image'>
             <Image
               src={ctaImage}
